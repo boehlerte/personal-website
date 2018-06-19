@@ -1,0 +1,33 @@
+$color-darkest-blue: #345392;
+$color-dark-blue: #397ec3;
+$color-medium-blue: #70a8dd;
+$color-light-blue: #8fc0e7;
+$color-lightest-blue: #c7deed;
+
+.main-container {
+    border: 1px solid black;
+    font-family: 'Montserrat', sans-serif
+}
+
+.main-container-header {
+    border: 1px solid black;
+    &--name {
+        color: $color-darkest-blue;
+        font-weight: 400;
+        font-size: 5rem;
+    }
+    &--description {
+        color: $color-dark-blue;
+        font-size: 3rem;
+        font-weight: 300;
+    }
+    text-align: center;
+}
+
+.main-container-body {
+    border: 1px solid black;
+}
+
+.main-container-footer {
+    border: 1px solid black;
+}
