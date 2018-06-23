@@ -8,19 +8,27 @@
     </div>
     <div class="main-container-header--navigation">
       <mat-toolbar>
-        <button mat-button color="primary">About Me</button>
-        <button mat-button color="primary">Projects</button>
-        <button mat-button color="primary">Resume</button>
-        <button mat-button color="primary">Contact Me</button>
+        <a mat-button href="#about-me">About Me</a>
+        <a mat-button href="#projects">Projects</a>
+        <a mat-button href="#resume">Resume</a>
+        <a mat-button href="#contact-me">Contact Me</a>
       </mat-toolbar>
     </div>
   </div>
 
   <div class="main-container-body">
-    <about-me></about-me>
-    <projects></projects>
-    <resume></resume>
-    <contact-me></contact-me>
+    <div class="about-me-holder" id="about-me">
+      <about-me></about-me>
+    </div>
+    <div class="projects-holder" id="projects">
+      <projects></projects>
+    </div>
+    <div class="resume-holder" id="resume">
+      <resume></resume>
+    </div>
+    <div class="contact-me-holder" id="contact-me">
+      <contact-me></contact-me>
+    </div>
   </div>
   
   <div class="main-container-footer">
