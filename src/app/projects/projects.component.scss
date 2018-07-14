@@ -1,3 +1,12 @@
-.projects-main-container {
-    height: 50rem;
+@import '../sass/main';
+.projects {
+    &__row {
+        display: flex;
+        flex-flow: row wrap; 
+        justify-content: center;
+    }
+    &__project-card {
+        max-width: 25rem;
+        margin: 2rem;
+    }
 }

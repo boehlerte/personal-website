@@ -4,36 +4,26 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { ResumeComponent } from './resume/resume.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 
 // angular material components
-import { MatTabsModule, MatToolbar, MatToolbarModule } from '@angular/material';
-import { MatMenuModule } from '@angular/material';
-import { MatButtonModule } from '@angular/material';
+import { MatCardModule } from '@angular/material';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutMeComponent,
-    ResumeComponent,
     ProjectsComponent,
     ContactMeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatTabsModule,
-    MatMenuModule,
-    MatButtonModule,
-    MatToolbarModule
+    MatCardModule
   ],
   exports: [
-    MatTabsModule,
-    MatMenuModule,
-    MatButtonModule,
-    MatToolbarModule
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
