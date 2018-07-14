@@ -1,37 +1,31 @@
 <div class="main-container">
-  <div class="main-container-header">
-    <div class="main-container-header--name">
+  <div class="header">
+    <div class="header__name">
       Erin Boehlert
     </div>
-    <div class="main-container-header--description">
+    <div class="header__description">
       Front-end Developer 
     </div>
-    <div class="main-container-header--navigation">
-      <mat-toolbar>
-        <a mat-button href="#about-me">About Me</a>
-        <a mat-button href="#projects">Projects</a>
-        <a mat-button href="#resume">Resume</a>
-        <a mat-button href="#contact-me">Contact Me</a>
-      </mat-toolbar>
+    <div class="header__navigation row">
+      <div class="col-1-of-3 header__section"><a class="header__navigation--link" href="#about-me">About Me</a></div>
+      <div class="col-1-of-3 header__section"><a class="header__navigation--link" href="#projects">Projects</a></div>
+      <div class="col-1-of-3 header__section"><a class="header__navigation--link" href="#contact-me">Contact Me</a></div>
     </div>
   </div>
 
-  <div class="main-container-body">
-    <div class="about-me-holder" id="about-me">
+  <div class="body">
+    <div class="body__about-me" id="about-me">
       <about-me></about-me>
     </div>
-    <div class="projects-holder" id="projects">
+    <div class="body__projects" id="projects">
       <projects></projects>
     </div>
-    <div class="resume-holder" id="resume">
-      <resume></resume>
-    </div>
-    <div class="contact-me-holder" id="contact-me">
+    <div class="body__contact-me" id="contact-me">
       <contact-me></contact-me>
     </div>
   </div>
   
-  <div class="main-container-footer">
+  <div class="footer">
     Footer here!
   </div>
 </div>

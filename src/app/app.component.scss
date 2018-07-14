@@ -1,27 +1,6 @@
-.main-container {
-    border: 1px solid black;
-    font-family: 'Montserrat', sans-serif
-}
+@import './sass/main';
 
-.main-container-header {
-    border: 1px solid black;
-    &--name {
-        font-weight: 400;
-        font-size: 5rem;
-    }
-    &--description {
-        font-size: 3rem;
-        font-weight: 300;
-    }
-    text-align: center;
-}
+// .body {
+//     border: 1px solid black;
+// }
 
-.main-container-body {
-    border: 1px solid black;
-}
-
-.main-container-footer {
-    border: 1px solid black;
-    font-size: 2rem;
-    height: 10rem;
-}
