@@ -32,6 +32,7 @@
         font-size: $default-font-size;
 
         &--link {
+            color: $color-primary;
             text-decoration: none;
             padding: 1rem;
             &:hover {
