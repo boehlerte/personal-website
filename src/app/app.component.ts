@@ -9,6 +9,6 @@ export class AppComponent {
   backgroundUrl: string;
 
   ngOnInit() {
-    this.backgroundUrl = 'http://localhost:4200/assets/website-banner.jpg';
+    this.backgroundUrl = './assets/website-banner.jpg';
   }
 }
