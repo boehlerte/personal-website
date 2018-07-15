@@ -1,16 +1,32 @@
 .header {
-    border: 1px solid black;
-    &__name {
-        font-weight: 400;
-        font-size: $x-large-font-size;
-        color: $color-primary;
+    position: relative;
+    &__image {
+        height: 50rem;
+        max-width: 100%;
+        background-size: cover;
+        background-position: top;
+        position: relative;
     }
-    &__description {
-        font-size: $large-font-size;
-        font-weight: 300;
-        color: $color-tertiary;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid $color-secondary;
+    &__title {
+        font-weight: 400;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &--name {
+            letter-spacing: 1rem;
+            color: $color-white;
+            font-size: $x-large-font-size;
+        }
+        &--description {
+            margin-top: 2rem;
+            letter-spacing: .75rem;
+            color: $color-primary-light;
+            font-size: $default-font-size;
+        }
+        &--spacer {
+            color: $color-secondary;
+        }
     }
     &__navigation {
         font-size: $default-font-size;
@@ -35,4 +51,23 @@
         }
     }
     text-align: center;
+}
+
+
+// for mobile devices
+@media only screen and (max-width: 768px) {
+    .header {
+        &__title { 
+            width: 100%;
+            &--name {
+                font-size: $large-font-size;
+            }
+            &--description {
+                letter-spacing: .5rem;
+                width: 100%;
+                font-size: $default-font-size;
+            }
+        }
+    }
+    
 }
