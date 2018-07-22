@@ -21,4 +21,8 @@
         max-width: 25rem;
         margin: 2rem;
     }
+    &__arrow {
+        top: 90%;
+        @include horizontal-center;
+    }
 }
