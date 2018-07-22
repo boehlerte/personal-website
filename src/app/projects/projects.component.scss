@@ -1,5 +1,6 @@
 @import '../sass/main';
 .projects {
+    position: relative;
     &__row {
         display: flex;
         flex-flow: row wrap; 

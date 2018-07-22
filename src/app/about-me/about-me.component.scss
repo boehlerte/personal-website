@@ -1,4 +1,35 @@
-.about-me-main-container {
-    height: 50rem;
-    border: 1px dotted grey;
+@import '../sass/main';
+
+.about-me {
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light-2, .7), rgba($color-primary-dark, .95)), url('../../assets/leaf-pattern.jpg');
+    background-size: cover;
+
+    &__heading {
+        color: $color-grey-light;
+        text-align: center;
+        top: 15rem;
+        @include horizontal-center;
+    }
+
+    &__image {
+        border-radius: 50%;
+        width: 25rem;
+        height: 25rem;
+        background-image: url('../../assets/self.jpg');
+        background-size: cover;
+        display: inline-block;
+        @include horizontal-center;
+        top: 35rem;
+    }
+
+    &__arrow {
+        color: $color-grey-light;
+    }
+}
+
+// for small devices
+@media only screen and (max-width: $medium-screen) {
+    .content {
+        top: 67%;
+    }
 }

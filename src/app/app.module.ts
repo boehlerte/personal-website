@@ -8,7 +8,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 
 // angular material components
-import { MatCardModule } from '@angular/material';
+import { MatCardModule, MatIconModule} from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { MatCardModule } from '@angular/material';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule,
+    HttpClientModule
   ],
   exports: [
     MatCardModule

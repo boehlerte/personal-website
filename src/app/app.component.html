@@ -1,16 +1,12 @@
 <div class="main-container">
   <div class="header">
-    <div class="header__image" [ngStyle]="{'background-image': 'linear-gradient(to right bottom, rgba(65, 105, 225, 0.85), 
-      rgba(5, 8, 49, .85)), url('+backgroundUrl+')'}">
+    <div class="header__content">
+      <div class="header__content--name heading-primary lg-screen">erin boehlert</div>
+      <div class="header__content--name heading-primary sm-screen">eb</div>
+      <div class="header__content--description heading-secondary">Design & Develop</div>
     </div>
-    <div class="header__title">
-      <div class="header__title--name">Erin Boehlert</div>
-      <div class="header__title--description">Dream <span class="header__title--spacer">|</span> Design <span class="header__title--spacer">|</span> Develop</div>
-    </div>
-    <div class="header__navigation row">
-      <div class="col-1-of-3 header__section"><a class="header__navigation--link" href="#about-me">About Me</a></div>
-      <div class="col-1-of-3 header__section"><a class="header__navigation--link" href="#projects">Projects</a></div>
-      <div class="col-1-of-3 header__section"><a class="header__navigation--link" href="#contact-me">Contact Me</a></div>
+    <div class="header__arrow section__arrow">
+      <mat-icon svgIcon="down-arrow"></mat-icon>
     </div>
   </div>
 

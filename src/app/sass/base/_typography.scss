@@ -1,3 +1,58 @@
 .main-container {
-    font-family: 'Montserrat', sans-serif
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading-primary {
+    font-family: 'Meddon', cursive;
+}
+
+.heading-secondary {
+    font-family: inherit;
+    font-weight: 400;
+    letter-spacing: .75rem;
+    font-size: $medium-font-size;
+}
+
+.content {
+    font-weight: 300;
+    color: $color-grey-light;
+    font-size: $default-font-size;
+    width: 100rem;
+    text-align: center;
+    top: 65%;
+    @include horizontal-center;
+}
+
+// for large devices
+@media only screen and (max-width: $large-screen) {
+    .content {
+        width: 80rem;
+    }
+}
+
+// for medium devices
+@media only screen and (max-width: $medium-screen) {
+    .content {
+        width: 70rem;
+    }
+}
+
+// for small devices
+@media only screen and (max-width: $small-screen) {
+    .content {
+        width: 85%;
+        font-size: $small-font-size;
+        letter-spacing: 1px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .content {
+        width: 90%;
+        font-size: $small-font-size;
+        letter-spacing: 1px;
+    }
+    .heading-secondary {
+        font-size: $default-font-size;
+    }
 }
