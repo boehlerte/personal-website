@@ -3,6 +3,8 @@
 .about-me {
     background-image: linear-gradient(to right bottom, rgba($color-primary-light-2, .7), rgba($color-primary-dark, .95)), url('../../assets/leaf-pattern.jpg');
     background-size: cover;
+    min-height: 110rem;
+
 
     &__heading {
         color: $color-grey-light;
