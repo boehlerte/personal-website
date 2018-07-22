@@ -22,6 +22,11 @@
             border: 1px solid $color-grey-dark;
         }
     }
+    a {
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 // for mobile x-small screen
