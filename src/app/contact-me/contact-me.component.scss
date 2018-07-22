@@ -16,6 +16,7 @@
     &__content {
         position: absolute;
         top: 30%;
+        @include horizontal-center;
         
         &--text {
             color: $color-grey-light;
