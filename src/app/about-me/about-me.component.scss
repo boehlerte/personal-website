@@ -6,6 +6,7 @@
     background-size: cover;
     color: $color-grey-light;
     text-align: center;
+    @include border-frame;
 
     &__heading {
         padding-top: 10rem;

@@ -8,6 +8,7 @@
     position: relative;
     color: $color-grey-light;
     text-align: center;
+    @include border-frame;
 
     &__content {
         @include absolute-center;
@@ -17,7 +18,7 @@
     &__text {
         padding: 0 2rem;
     }
-    
+
     &__links {
         padding-top: 5rem;
         img {
