@@ -23,16 +23,16 @@
             padding: 0 5rem;
             text-align: center;
         }
+    }
 
-        &--links {
-            width: 100%;
-            text-align: center;
-            @include horizontal-center;
-            top: 200%;
-            img {
-                width: 10rem;
-                padding: 0 5rem;
-            }
+    &__links {
+        width: 100%;
+        text-align: center;
+        @include horizontal-center;
+        top: 65%;
+        img {
+            width: 10rem;
+            padding: 0 5rem;
         }
     }
 
@@ -45,12 +45,10 @@
 // for mobile x-small devices
 @media only screen and (max-width: 425px) {
     .contact-me {
-        &__content {
-            &--links {
-                img {
-                    width: 5rem;
-                    padding: 2rem;
-                }
+        &__links {
+            img {
+                width: 5rem;
+                padding: 2rem;
             }
         }
     }
@@ -63,11 +61,11 @@
             &--text {
                 font-size: $small-font-size;
             }
-            &--links {
-                img {
-                    width: 5rem;
-                    padding: 2rem;
-                }
+        }
+        &__links {
+            img {
+                width: 5rem;
+                padding: 2rem;
             }
         }
     }
