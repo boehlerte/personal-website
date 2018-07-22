@@ -2,6 +2,7 @@
 
 .contact-me {
     height: 100vh;
+    min-height: 40rem;
     background-image: linear-gradient(to right bottom, rgba($color-secondary, .7), rgba($color-secondary-dark, .95)), url('../../assets/water-texture.jpg');
     background-size: cover;
 
@@ -35,6 +36,7 @@
     }
 
     &__arrow {
+        top: 90%;
         color: $color-grey-light;
     }
 }
