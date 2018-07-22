@@ -2,34 +2,24 @@
 
 .contact-me {
     height: 100vh;
-    min-height: 80rem;
+    min-height: 40rem;
     background-image: linear-gradient(to right bottom, rgba($color-secondary, .7), rgba($color-secondary-dark, .95)), url('../../assets/water-texture.jpg');
     background-size: cover;
-
-    &__heading {
-        color: $color-grey-light;
-        text-align: center;
-        top: 15rem;
-        @include horizontal-center;
-    }
+    position: relative;
+    color: $color-grey-light;
+    text-align: center;
 
     &__content {
-        position: absolute;
-        top: 30%;
-        @include horizontal-center;
-        
-        &--text {
-            color: $color-grey-light;
-            padding: 0 5rem;
-            text-align: center;
-        }
+        @include absolute-center;
+        width: 100%;
     }
 
+    &__text {
+        padding: 0 2rem;
+    }
+    
     &__links {
-        width: 100%;
-        text-align: center;
-        @include horizontal-center;
-        top: 65%;
+        padding-top: 5rem;
         img {
             width: 10rem;
             padding: 0 5rem;
@@ -37,8 +27,8 @@
     }
 
     &__arrow {
-        top: 90%;
-        color: $color-grey-light;
+        top: 95%;
+        @include horizontal-center;
     }
 }
 
@@ -57,11 +47,6 @@
 // for small devices
 @media only screen and (max-width: $small-screen) {
     .contact-me {
-        &__content {
-            &--text {
-                font-size: $small-font-size;
-            }
-        }
         &__links {
             img {
                 width: 5rem;

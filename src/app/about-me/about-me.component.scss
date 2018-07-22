@@ -1,16 +1,15 @@
 @import '../sass/main';
 
 .about-me {
+    position: relative;
     background-image: linear-gradient(to right bottom, rgba($color-primary-light-2, .7), rgba($color-primary-dark, .95)), url('../../assets/leaf-pattern.jpg');
     background-size: cover;
-    min-height: 110rem;
-
+    color: $color-grey-light;
+    text-align: center;
 
     &__heading {
-        color: $color-grey-light;
-        text-align: center;
-        top: 15rem;
-        @include horizontal-center;
+        padding-top: 10rem;
+        font-size: $medium-font-size;
     }
 
     &__image {
@@ -20,28 +19,34 @@
         background-image: url('../../assets/self.jpg');
         background-size: cover;
         display: inline-block;
-        @include horizontal-center;
-        top: 35rem;
+        margin-top: 5rem;
+    }
+
+    &__content {
+        max-width: 130rem;
+        font-size: $default-font-size;
+        letter-spacing: 2px;
+        width: 70%;
+        font-weight: 300;
+        margin: 0 auto;
+        padding: 5rem 0 15rem;
     }
 
     &__arrow {
         color: $color-grey-light;
+        @include horizontal-center;
+        top: 97%;
     }
 }
 
 // for small devices
 @media only screen and (max-width: $small-screen) {
-    .section {
-        height: 110rem;
-    }
-    .content {
-        top: 70%;
+    .about-me {
+        &__heading {
+            font-size: $default-font-size;
+        }
+        &__content {
+            font-size: $small-font-size;
+        }
     }
 }
-
-// // for large devices
-// @media only screen and (max-width: $large-screen) {
-//     .section {
-//         height: 130rem;
-//     }
-// }

@@ -1,6 +1,8 @@
 .header {
+    background-color: $color-grey-light;
     height: 100vh;
     text-align: center;
+    color: $color-grey-dark;
 
     &__content {
         max-width: 100rem;
@@ -9,34 +11,17 @@
         border: 1px solid $color-grey-dark;
         position: relative;
 
-        &::before {
-            position: absolute;
-            top: 1rem;
-            left: 1rem;
-            bottom: 1rem;
-            right: 1rem;
-            content: '';
-            border: 1px solid $color-grey-dark;
-        }
-
+        @include double-border;
         @include absolute-center;
-    
-        &--name {
-            color: $color-grey-dark;
-            font-size: $x-large-font-size;
-        }
+
         &--description {
-            margin-bottom: 5rem;
-            color: $color-grey-dark;
-            font-size: $default-font-size;
+            margin-bottom: 4rem;
         }
     }
 
     &__arrow {
-        position: absolute;
         top: 95%;
         @include horizontal-center;
-        color: $color-grey-dark;
     }
 }
 
@@ -49,27 +34,6 @@
     .header {
         &__content {
             padding: 5rem;
-            &--name {
-                font-size: $large-font-size;
-            }
-            &--description {
-                font-size: $small-font-size;
-            }
-        }
-    }
-}
-
-// for medium devices
-@media only screen and (max-width: $medium-screen) {
-    .header {
-        &__content {
-            padding: 5rem;
-            &--name {
-                font-size: $medium-font-size;
-            }
-            &--description {
-                font-size: $small-font-size;
-            }
         }
     }
 }
@@ -79,15 +43,6 @@
     .header {
         &__content {
             padding: 3rem;
-            &--name {
-                // content changes from 'erin boehlert' to 'eb'
-                font-size: $x-large-font-size;
-            }
-            &--description {
-                letter-spacing: .5rem;
-                width: 100%;
-                font-size: $small-font-size;
-            }
         }
     }
     

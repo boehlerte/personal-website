@@ -1,27 +1,18 @@
 .footer {
     height: 25rem;
     position: relative;
+    background-color: $color-grey-light;
+
     &__content {
         @include absolute-center;
+        @include double-border;
 
-        font-size: $default-font-size;
         color: $color-grey-dark;
         text-align: center;
-        letter-spacing: 1rem;
-
         border: 1px solid $color-grey-dark;
         padding: 5rem;
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: .5rem;
-            left: .5rem;
-            bottom: .5rem;
-            right: .5rem;
-            border: 1px solid $color-grey-dark;
-        }
     }
+
     a {
         &:hover {
             cursor: pointer;
@@ -33,8 +24,7 @@
 @media only screen and (max-width: 425px) {
     .footer {
         &__content {
-            font-size: $small-font-size;
-            padding: 2rem;
+            padding: 3.5rem;
         }
     }
 }

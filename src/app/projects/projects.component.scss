@@ -2,27 +2,45 @@
 .projects {
     height: 40rem;
     position: relative;
+    color: $color-grey-dark;
+    background-color: $color-grey-light;
+    text-align: center;
+
     &__header {
-        color: $color-grey-dark;
-        text-align: center;
-        margin: 8rem 0;
+        padding-top: 10rem;
+        font-size: $medium-font-size;
     }
+
     &__subheader {
         font-size: 3rem;
         font-weight: 300;
         text-align: center;
+        padding-top: 3rem;
     }
+
     &__row {
         display: flex;
         flex-flow: row wrap; 
         justify-content: center;
     }
+
     &__project-card {
         max-width: 25rem;
         margin: 2rem;
     }
+
     &__arrow {
-        top: 90%;
+        top: 92%;
+        color: $color-grey-dark;
         @include horizontal-center;
+    }
+}
+
+// for small devices
+@media only screen and (max-width: $small-screen) {
+    .about-me {
+        &__header {
+            font-size: $default-font-size;
+        }
     }
 }
