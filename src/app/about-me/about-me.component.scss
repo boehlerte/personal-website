@@ -28,8 +28,18 @@
 }
 
 // for small devices
-@media only screen and (max-width: $medium-screen) {
+@media only screen and (max-width: $small-screen) {
+    .section {
+        height: 110rem;
+    }
     .content {
-        top: 67%;
+        top: 70%;
     }
 }
+
+// // for large devices
+// @media only screen and (max-width: $large-screen) {
+//     .section {
+//         height: 130rem;
+//     }
+// }

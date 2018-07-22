@@ -1,3 +1,71 @@
-.contact-me-main-container {
-    height: 50rem;
+@import '../sass/main';
+
+.contact-me {
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba($color-secondary, .7), rgba($color-secondary-dark, .95)), url('../../assets/water-texture.jpg');
+    background-size: cover;
+
+    &__heading {
+        color: $color-grey-light;
+        text-align: center;
+        top: 15rem;
+        @include horizontal-center;
+    }
+
+    &__content {
+        position: absolute;
+        top: 30%;
+        
+        &--text {
+            color: $color-grey-light;
+            padding: 0 5rem;
+            text-align: center;
+        }
+
+        &--links {
+            width: 100%;
+            text-align: center;
+            @include horizontal-center;
+            top: 200%;
+            img {
+                width: 10rem;
+                padding: 0 5rem;
+            }
+        }
+    }
+
+    &__arrow {
+        color: $color-grey-light;
+    }
+}
+
+// for mobile x-small devices
+@media only screen and (max-width: 425px) {
+    .contact-me {
+        &__content {
+            &--links {
+                img {
+                    width: 5rem;
+                    padding: 2rem;
+                }
+            }
+        }
+    }
+}
+
+// for small devices
+@media only screen and (max-width: $small-screen) {
+    .contact-me {
+        &__content {
+            &--text {
+                font-size: $small-font-size;
+            }
+            &--links {
+                img {
+                    width: 5rem;
+                    padding: 2rem;
+                }
+            }
+        }
+    }
 }

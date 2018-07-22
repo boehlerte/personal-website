@@ -1,4 +1,35 @@
 .footer {
-    font-size: 2rem;
-    height: 10rem;
+    height: 25vh;
+    position: relative;
+    &__content {
+        @include absolute-center;
+
+        font-size: $default-font-size;
+        color: $color-grey-dark;
+        text-align: center;
+        letter-spacing: 1rem;
+
+        border: 1px solid $color-grey-dark;
+        padding: 5rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: .5rem;
+            left: .5rem;
+            bottom: .5rem;
+            right: .5rem;
+            border: 1px solid $color-grey-dark;
+        }
+    }
+}
+
+// for mobile x-small screen
+@media only screen and (max-width: 425px) {
+    .footer {
+        &__content {
+            font-size: $small-font-size;
+            padding: 2rem;
+        }
+    }
 }

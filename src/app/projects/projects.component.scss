@@ -1,6 +1,17 @@
 @import '../sass/main';
 .projects {
+    height: 50vh;
     position: relative;
+    &__header {
+        color: $color-grey-dark;
+        text-align: center;
+        margin: 8rem 0;
+    }
+    &__subheader {
+        font-size: 3rem;
+        font-weight: 300;
+        text-align: center;
+    }
     &__row {
         display: flex;
         flex-flow: row wrap; 
