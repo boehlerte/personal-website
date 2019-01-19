@@ -33,7 +33,7 @@
     }
 }
 
-@mixin border-frame {
+@mixin border-frame($color) {
     &::before {
         position: absolute;
         top: 1rem;
@@ -41,6 +41,6 @@
         bottom: 1rem;
         right: 1rem;
         content: '';
-        border: 1px solid $color-grey-light;
+        border: 1px solid $color;
     }
 }

@@ -8,7 +8,7 @@
     position: relative;
     color: $color-grey-light;
     text-align: center;
-    @include border-frame;
+    @include border-frame($color-grey-light);
 
     &__content {
         @include absolute-center;
@@ -22,13 +22,13 @@
     &__links {
         padding-top: 5rem;
         img {
-            width: 10rem;
+            width: 7rem;
             padding: 0 5rem;
         }
     }
 
     &__arrow {
-        top: 95%;
+        bottom: 1em;
         @include horizontal-center;
     }
 }
@@ -38,7 +38,7 @@
     .contact-me {
         &__links {
             img {
-                width: 5rem;
+                width: 3rem;
                 padding: 2rem;
             }
         }
@@ -50,7 +50,7 @@
     .contact-me {
         &__links {
             img {
-                width: 5rem;
+                width: 3rem;
                 padding: 2rem;
             }
         }

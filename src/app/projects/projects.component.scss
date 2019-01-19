@@ -1,21 +1,21 @@
 @import '../sass/main';
 .projects {
-    height: 40rem;
     position: relative;
     color: $color-grey-dark;
     background-color: $color-grey-light;
     text-align: center;
+    padding-bottom: 5em;
+    @include border-frame($color-grey-dark);
 
     &__header {
-        padding-top: 10rem;
-        font-size: $medium-font-size;
+        padding-top: 5rem;
+        margin-top: 0;
     }
 
     &__subheader {
-        font-size: 3rem;
         font-weight: 300;
         text-align: center;
-        padding-top: 3rem;
+        margin-top: 1rem;
     }
 
     &__row {
@@ -30,7 +30,7 @@
     }
 
     &__arrow {
-        top: 92%;
+        bottom: 1em;
         color: $color-grey-dark;
         @include horizontal-center;
     }
