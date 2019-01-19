@@ -6,21 +6,21 @@
     background-size: cover;
     color: $color-grey-light;
     text-align: center;
-    @include border-frame;
+    @include border-frame($color-grey-light);
 
     &__heading {
-        padding-top: 10rem;
-        font-size: $medium-font-size;
+        padding-top: 5rem;
+        margin-top: 0;
     }
 
     &__image {
         border-radius: 50%;
-        width: 25rem;
-        height: 25rem;
+        width: 15rem;
+        height: 15rem;
         background-image: url('../../assets/self.jpg');
         background-size: cover;
         display: inline-block;
-        margin-top: 5rem;
+        margin-top: 2.5rem;
     }
 
     &__content {
@@ -30,24 +30,12 @@
         width: 70%;
         font-weight: 300;
         margin: 0 auto;
-        padding: 5rem 0 15rem;
+        padding: 2.5rem 0 7rem;
     }
 
     &__arrow {
         color: $color-grey-light;
         @include horizontal-center;
-        top: 97%;
-    }
-}
-
-// for small devices
-@media only screen and (max-width: $small-screen) {
-    .about-me {
-        &__heading {
-            font-size: $default-font-size;
-        }
-        &__content {
-            font-size: $small-font-size;
-        }
+        bottom: 1em;
     }
 }
