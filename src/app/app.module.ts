@@ -10,13 +10,15 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 // angular material components
 import { MatCardModule, MatIconModule} from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
+import { ProjectCarouselComponent } from './projects/project-carousel/project-carousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutMeComponent,
     ProjectsComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    ProjectCarouselComponent
   ],
   imports: [
     BrowserModule,
